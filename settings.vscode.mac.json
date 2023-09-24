@@ -1,0 +1,163 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "remote.SSH.remotePlatform": {
+        "10.32.78.103": "linux",
+        "9.135.143.189": "linux",
+        "9.135.90.240": "linux"
+    },
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 20,
+    "files.autoGuessEncoding": true,
+    "vim.useSystemClipboard": true,
+    "vim.foldfix": true,
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "asdghklqwertyuiopzxcvbnmfj",
+    "vim.leader": "<space>",
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/opt/homebrew/bin/nvim",
+    "workbench.panel.defaultLocation": "right",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ],
+        },
+        {
+            "before": ["<C-h>"],
+            "after": ["<C-W>", "h"]
+        },
+        {
+            // Go to lower window
+            "before": ["<C-j>"],
+            "after": ["<C-W>", "j"]
+        },
+        {
+            // Go to upper window
+            "before": ["<C-k>"],
+            "after": ["<C-W>", "k"]
+        },
+        {
+            // Go to right window
+            "before": ["<C-l>"],
+            "after": ["<C-W>", "l"]
+        },
+        {
+            // Toggle Word Wrap
+            "before": ["<leader>", "u", "w"],
+            "commands": ["editor.action.toggleWordWrap"]
+        },
+        {
+            // Prev buffer
+            "before": ["<S-h>"],
+            "commands": [":bprev"]
+        },
+        {
+            // Next buffer
+            "before": ["<S-l>"],
+            "commands": [":bnext"]
+        },
+        // FLASH.NVIM
+        {
+            // Flash
+            "before": ["s"],
+            "after": ["<leader>", "<leader>", "/"]
+        },
+        {
+            // Flash Treesitter
+            "before": ["S"],
+            "after": ["<leader>", "<leader>", "<leader>", "j"]
+        },
+        {
+            // Find Files (root dir)
+            "before": ["<leader>", "<space>"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            // Buffers
+            "before": ["<leader>", "f", "b"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            // Find Files (root dir)
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            // Find Files (cwd)
+            "before": ["<leader>", "f", "F"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            // Recent
+            "before": ["<leader>", "f", "r"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            // Recent (cwd)
+            "before": ["<leader>", "f", "R"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            // commits
+            "before": ["<leader>", "g", "c"],
+            "commands": ["workbench.view.scm"],
+            "when": "workbench.scm.active"
+        },
+        {
+            // status
+            "before": ["<leader>", "g", "s"],
+            "commands": ["workbench.view.scm"],
+            "when": "workbench.scm.active"
+        },
+        {
+            // Grep (root dir)
+            "before": ["<leader>", "s", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            // Grep (cwd)
+            "before": ["<leader>", "s", "G"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            // Key Maps
+            "before": ["<leader>", "s", "k"],
+            "commands": ["workbench.action.showCommands"]
+        },
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=120"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=248"],
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.associations": {
+        "*.mdx": "markdown"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "tabnine.experimentalAutoImports": true,
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c11",
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.inheritEnv": false
+}
