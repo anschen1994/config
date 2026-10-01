@@ -1,0 +1,58 @@
+onboarding = false
+
+# ==================== 兼容 tmux：开始 ====================
+
+[terminal]
+default_shell = "/bin/zsh"
+
+[ui]
+mouse_capture = true
+
+[keys]
+prefix = "ctrl+q"
+
+# 保留现有的 pane 方向切换习惯。
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+
+# 使用 Herdr tab 对应 tmux window 的常用操作。
+new_tab = "prefix+c"
+next_tab = "prefix+n"
+previous_tab = "prefix+p"
+rename_tab = "prefix+comma"
+
+# 左右分屏 / 上下分屏。
+split_vertical = "prefix+%"
+split_horizontal = 'prefix+"'
+
+zoom = "prefix+z"
+close_pane = "prefix+x"
+detach = "prefix+d"
+
+# 保留 tmux 的 prefix+o；将 Herdr 通知跳转移到 prefix+Shift+O。
+cycle_pane_next = "prefix+o"
+open_notification_target = "prefix+shift+o"
+
+# Herdr 会优先将 Esc 解释为取消前缀模式，暂用 prefix+[ 进入复制模式。
+# 进入后使用 v 开始选择、y 复制并退出。
+copy_mode = "prefix+["
+
+# Agent 监控快捷键：全局跳转、侧栏、下一个 / 上一个 agent。
+goto = "prefix+g"
+toggle_sidebar = "prefix+b"
+next_agent = "prefix+]"
+previous_agent = "prefix+shift+]"
+
+# 工作区导航：prefix+w 进入，j/k 选择 Space，Enter 确认，Esc 退出。
+# 仅在导航模式内生效，不改变 prefix+h/j/k/l 的 pane 切换行为。
+workspace_picker = "prefix+w"
+navigate_workspace_down = "j"
+navigate_workspace_up = "k"
+
+# 导航模式中让出 j/k 给 Space，pane 上下移动改用 Ctrl+j / Ctrl+k。
+navigate_pane_down = "ctrl+j"
+navigate_pane_up = "ctrl+k"
+
+# ==================== 兼容 tmux：结束 ====================
